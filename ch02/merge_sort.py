@@ -52,12 +52,12 @@ def merge_sort(A, p, r):
 		merge(A, p, q, r)
 	return A
 
-
+# 分治法排序，调用不使用哨兵牌判断结束的版本
 def merge_sort_v1(A, p, r):
 	if p < r:
 		q = (p+r)//2
-		merge_sort(A, p, q)
-		merge_sort(A, q+1 , r)
+		merge_sort_v1(A, p, q)
+		merge_sort_v1(A, q+1 , r)
 		merge_v1(A, p, q, r)
 	return A
 
