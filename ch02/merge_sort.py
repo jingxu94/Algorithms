@@ -61,6 +61,6 @@ def merge_sort_v1(A, p, r):
 		merge_v1(A, p, q, r)
 	return A
 
-A = [31,41,59,26,41,58,69,32,90,13,45,55]
-print( merge_sort_v1(A, 0 ,len(A)-1) )
-print( merge_sort(A, 0, len(A)-1) )
+# A = [31,41,59,26,41,58,69,32,90,13,45,55]
+# print( merge_sort_v1(A, 0 ,len(A)-1) )
+# print( merge_sort(A, 0, len(A)-1) )
